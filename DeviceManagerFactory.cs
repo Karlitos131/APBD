@@ -1,3 +1,4 @@
+namespace APBD
 public class DeviceManagerFactory : IDeviceManagerFactory
 {
     public DeviceManager Create(string filePath)

@@ -1,3 +1,4 @@
+namespace APBD
 public class PersonalComputer : Device
 {
     public string? OperatingSystem { get; }

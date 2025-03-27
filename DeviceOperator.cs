@@ -1,3 +1,4 @@
+namespace APBD
 public class DeviceOperator : IDeviceOperator
 {
     private readonly IDeviceRepository _repository;

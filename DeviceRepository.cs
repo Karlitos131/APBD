@@ -1,3 +1,4 @@
+namespace APBD
 public class DeviceRepository : IDeviceRepository
 {
     private readonly List<Device> _devices;

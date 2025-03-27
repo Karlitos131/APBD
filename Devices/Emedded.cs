@@ -1,3 +1,4 @@
+namespace APBD
 public class Embedded : Device
 {
     public string IpAddress { get; }

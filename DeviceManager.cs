@@ -1,3 +1,4 @@
+namespace APBD
 public class DeviceManager
 {
     private readonly IDeviceRepository _repository;

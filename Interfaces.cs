@@ -1,3 +1,4 @@
+namespace APBD
 public interface IDeviceRepository
 {
     void Add(Device device);
@@ -30,4 +31,12 @@ public interface IDeviceManagerFactory
 public interface IPowerNotify
 {
     void Notify();
+}
+
+public interface IDeviceParser
+{
+    Device ParseDevice(string line, int lineNumber);
+    PersonalComputer ParsePC(string line, int lineNumber);
+    Smartwatch ParseSmartwatch(string line, int lineNumber);
+    Embedded ParseEmbedded(string line, int lineNumber);
 }

@@ -1,3 +1,4 @@
+namespace APBD
 public class Smartwatch : Device, IPowerNotify
 {
     private int _batteryLevel;

@@ -1,3 +1,4 @@
+namespace APBD
 public abstract class Device
 {
     public string Id { get; }
