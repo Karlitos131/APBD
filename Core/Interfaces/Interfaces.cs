@@ -26,7 +26,6 @@ namespace APBD
     public interface IDeviceManagerFactory
     {
         DeviceManager Create(string filePath);
-        (DeviceManager manager, IDeviceRepository repository, IDeviceOperator @operator) CreateWithDependencies(string filePath);
     }
 
     public interface IPowerNotify
