@@ -9,7 +9,6 @@ namespace APBD
         {
             try
             {
-                // Get the absolute path to input.txt
                 string inputPath = Path.Combine(Directory.GetCurrentDirectory(), "input.txt");
                 Console.WriteLine($"Looking for input file at: {inputPath}");
 
@@ -18,11 +17,9 @@ namespace APBD
                     throw new FileNotFoundException($"Cannot find input.txt at {inputPath}");
                 }
 
-                // Initialize system
                 var factory = new DeviceManagerFactory();
                 var (_, repository, @operator) = factory.CreateWithDependencies(inputPath);
                 
-                // Run demonstration
                 new DeviceService(repository, @operator).DemonstrateDeviceOperations();
             }
             catch (Exception ex)
