@@ -1,4 +1,4 @@
-namespace APBD
+namespace APBD{
 public class PersonalComputer : Device
 {
     public string? OperatingSystem { get; }
@@ -23,4 +23,5 @@ public class PersonalComputer : Device
     public override string ToString() => 
         $"PC {Name} ({Id}) is {(IsEnabled ? "enabled" : "disabled")} " +
         $"with OS: {OperatingSystem ?? "None installed"}";
+}
 }

@@ -1,4 +1,4 @@
-namespace APBD
+namespace APBD{
 public class DeviceManagerFactory : IDeviceManagerFactory
 {
     public DeviceManager Create(string filePath)
@@ -7,8 +7,8 @@ public class DeviceManagerFactory : IDeviceManagerFactory
         return manager;
     }
 
-   public (DeviceManager manager, IDeviceRepository repository, IDeviceOperator @operator) CreateWithDependencies(string filePath)
-{
+    public (DeviceManager manager, IDeviceRepository repository, IDeviceOperator @operator) CreateWithDependencies(string filePath)
+    {
     var repository = new DeviceRepository();
     var parser = new DeviceParser(); // Add this line
     var @operator = new DeviceOperator(repository);
@@ -21,5 +21,6 @@ public class DeviceManagerFactory : IDeviceManagerFactory
     manager.ParseDevices(lines);
     
     return (manager, repository, @operator);
+    }
 }
 }

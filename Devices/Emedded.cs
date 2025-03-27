@@ -1,4 +1,4 @@
-namespace APBD
+namespace APBD{
 public class Embedded : Device
 {
     public string IpAddress { get; }
@@ -40,4 +40,5 @@ public class Embedded : Device
     public override string ToString() => 
         $"Embedded {Name} ({Id}) is {(IsEnabled ? "enabled" : "disabled")} " +
         $"on network {NetworkName} ({IpAddress})";
+}
 }

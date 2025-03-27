@@ -1,18 +1,18 @@
-namespace APBD
-public abstract class Device
-{
-    public string Id { get; }
-    public string Name { get; }
-    public bool IsEnabled { get; set; }
-
-    protected Device(string id, string name, bool isEnabled)
+namespace APBD{
+    public abstract class Device
     {
+        public string Id { get; }
+        public string Name { get; }
+        public bool IsEnabled { get; set; }
+
+        protected Device(string id, string name, bool isEnabled)
+        {
         Id = id;
         Name = name;
         IsEnabled = isEnabled;
-    }
+        }
 
-    public virtual void TurnOn()
+        public virtual void TurnOn()
     {
         IsEnabled = true;
     }
@@ -23,4 +23,5 @@ public abstract class Device
     }
 
     public abstract override string ToString();
+    }
 }

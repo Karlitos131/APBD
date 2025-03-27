@@ -1,4 +1,4 @@
-namespace APBD
+namespace APBD{
 public class DeviceService
 {
     private readonly IDeviceRepository _repository;
@@ -63,4 +63,5 @@ public class DeviceService
             Console.WriteLine(device.ToString());
         }
     }
+}
 }

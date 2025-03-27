@@ -1,4 +1,4 @@
-namespace APBD
+namespace APBD{
 public interface IDeviceRepository
 {
     void Add(Device device);
@@ -39,4 +39,5 @@ public interface IDeviceParser
     PersonalComputer ParsePC(string line, int lineNumber);
     Smartwatch ParseSmartwatch(string line, int lineNumber);
     Embedded ParseEmbedded(string line, int lineNumber);
+}
 }

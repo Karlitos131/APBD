@@ -1,4 +1,4 @@
-namespace APBD
+namespace APBD{
 public class DeviceOperator : IDeviceOperator
 {
     private readonly IDeviceRepository _repository;
@@ -21,4 +21,5 @@ public class DeviceOperator : IDeviceOperator
             throw new ArgumentException($"Device with ID {deviceId} not found");
         device.TurnOff();
     }
+}
 }

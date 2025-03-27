@@ -1,4 +1,4 @@
-namespace APBD
+namespace APBD{
 public class EmptySystemException : Exception
 {
     public EmptySystemException() : base("Operating system is not installed") { }
@@ -12,4 +12,5 @@ public class EmptyBatteryException : Exception
 public class ConnectionException : Exception
 {
     public ConnectionException() : base("Cannot connect to the network") { }
+}
 }

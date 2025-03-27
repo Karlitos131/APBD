@@ -1,4 +1,4 @@
-namespace APBD
+namespace APBD{
 public class DeviceRepository : IDeviceRepository
 {
     private readonly List<Device> _devices;
@@ -42,4 +42,5 @@ public class DeviceRepository : IDeviceRepository
     public Device? GetById(string deviceId) => _devices.FirstOrDefault(d => d.Id.Equals(deviceId));
 
     public IEnumerable<Device> GetAll() => _devices.AsReadOnly();
+}
 }

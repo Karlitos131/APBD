@@ -1,4 +1,4 @@
-namespace APBD
+namespace APBD{
 public class Smartwatch : Device, IPowerNotify
 {
     private int _batteryLevel;
@@ -41,4 +41,5 @@ public class Smartwatch : Device, IPowerNotify
 
     public override string ToString() => 
         $"Smartwatch {Name} ({Id}) is {(IsEnabled ? "enabled" : "disabled")} with {BatteryLevel}% battery";
+}
 }

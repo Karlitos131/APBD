@@ -1,4 +1,4 @@
-namespace APBD
+namespace APBD{
 public class DeviceManager
 {
     private readonly IDeviceRepository _repository;
@@ -30,4 +30,5 @@ public class DeviceManager
             }
         }
     }
+}
 }
