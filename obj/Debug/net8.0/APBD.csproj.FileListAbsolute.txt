@@ -1,0 +1,5 @@
+/Users/franciszeksztupecki/Documents/GitHub/APBD/obj/Debug/net8.0/APBD.GeneratedMSBuildEditorConfig.editorconfig
+/Users/franciszeksztupecki/Documents/GitHub/APBD/obj/Debug/net8.0/APBD.AssemblyInfoInputs.cache
+/Users/franciszeksztupecki/Documents/GitHub/APBD/obj/Debug/net8.0/APBD.AssemblyInfo.cs
+/Users/franciszeksztupecki/Documents/GitHub/APBD/obj/Debug/net8.0/APBD.csproj.CoreCompileInputs.cache
+/Users/franciszeksztupecki/Documents/GitHub/APBD/obj/Debug/net8.0/APBD.sourcelink.json
